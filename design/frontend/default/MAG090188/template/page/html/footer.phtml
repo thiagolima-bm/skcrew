@@ -1,0 +1,192 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<!--Bloco footer avaliação-->
+<div class="main">
+    <div id="bloco1-ava">
+		<h2 class="title-home-catalog-boxfooter">Avalições</h2>    
+    	<ul>
+        	<li class="avaliacao-impar">
+                <span class="name-avaliacao">Yuri Villas Boas</span>
+                <span class="stars">****</span>
+                <span class="text-avaliacao">
+                Muito bom o skate que comprei no site, chegou em 3 dias. 
+                </span>
+            </li>
+            	<li class="avaliacao-par">
+                <span class="name-avaliacao">Yuri Villas Boas</span>
+                <span class="stars">****</span>
+                <span class="text-avaliacao">
+                Muito bom o skate que comprei no site, chegou em 3 dias. 
+                </span>
+            </li>
+    
+    	<li class="avaliacao-impar">
+                <span class="name-avaliacao">Yuri Villas Boas</span>
+                <span class="stars">****</span>
+                <span class="text-avaliacao">
+                Muito bom o skate que comprei no site, chegou em 3 dias. 
+                </span>
+            </li>
+    
+    	<li class="avaliacao-par">
+                <span class="name-avaliacao">Yuri Villas Boas</span>
+                <span class="stars">****</span>
+                <span class="text-avaliacao">
+                Muito bom o skate que comprei no site, chegou em 3 dias. 
+                </span>
+            </li>
+   
+    </ul>
+    
+    
+    </div>
+
+<!--Fim Bloco footer avaliação-->
+
+
+
+<!--Bloco footer Blog-->
+
+    <div id="bloco2-blog">
+		<h2 class="title-home-catalog-boxfooter">Notícias</h2>    
+    	<ul>
+        	<li class="avaliacao-impar">
+                <div class="picture_post">
+                	<img src="/sckrew/skin/frontend/default/MAG090188/images/picture.jpg" width="80" height="80" />
+                </div>
+            	<div class="post_position">
+                    <span class="name-avaliacao">Yuri Villas Boas</span>
+                    <span class="text-avaliacao">
+                    Muito bom o skate que comprei no site, chegou em 3 dias. 
+                    </span>
+                </div>
+            </li>
+                	<li class="avaliacao-par">
+                <div class="picture_post">
+                	<img src="/sckrew/skin/frontend/default/MAG090188/images/picture.jpg" width="80" height="80" />
+                </div>
+            	<div class="post_position">
+                    <span class="name-avaliacao">Yuri Villas Boas</span>
+                    <span class="text-avaliacao">
+                    Muito bom o skate que comprei no site, chegou em 3 dias. 
+                    </span>
+                </div>
+            </li>
+                	<li class="avaliacao-impar">
+                <div class="picture_post">
+                	<img src="/sckrew/skin/frontend/default/MAG090188/images/picture.jpg" width="80" height="80" />
+                </div>
+            	<div class="post_position">
+                    <span class="name-avaliacao">Yuri Villas Boas</span>
+                    <span class="text-avaliacao">
+                    Muito bom o skate que comprei no site, chegou em 3 dias. 
+                    </span>
+                </div>
+            </li>
+             
+            	
+   
+    </ul>
+    
+    
+    </div>
+
+<!--Fim Bloco footer bloco-->
+
+
+    <div id="bloco3-news">
+		<h2 class="title-home-catalog-boxfooter">Receba Novidades</h2>    
+<?php echo $this->getChildHtml('footer.newsletter'); ?>
+   
+    </ul>
+    
+    
+    </div>
+
+<!--Fim Bloco footer bloco-->
+
+<!--Inicio Bloco footer facebook-->
+
+<div class="facebook_box">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FFacebookDevelopers&amp;width=305&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=184116555006596" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:305px; height:258px;" allowTransparency="true"></iframe>
+</div>
+<!--fim Bloco footer facebook-->
+
+</div>
+
+
+<footer class="footer-container">
+	<div class="footer">	 
+		<div class="footer_top" id="footer">		
+			<div id="block_1" class="footer-area  hb-animate-element top-to-bottom">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_aboutus')->toHtml() ?> 
+				<?php  echo $this->getChildHtml('currency_top') ?>
+				<?php  echo $this->getChildHtml('store_language') ?>
+			</div>
+			<div id="block_2" class="footer-area hb-animate-element right-to-left">
+				<?php // echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_contactus')->toHtml() ?> 
+				<div class="content">
+						<?php /*?><?php echo $this->getChildHtml('footer.newsletter'); ?><?php */?>
+                        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_institucional')->toHtml() ?> 
+					</div>
+			</div>
+			<div id="block_3" class="footer-area">
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_staticlink')->toHtml() ?> 
+			</div>		
+			<div id="block_4" class="footer-area">				
+					
+					<!--<div class="social_block">-->
+						<?php //echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_socialicon')->toHtml() ?> 
+						<?php /*?><?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_contactus')->toHtml() ?> <?php */?>
+                        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_consumidores')->toHtml() ?> 
+				<!--	</div>			-->
+			 </div>	
+             <div id="block_5">
+             
+             <a href="https://twitter.com/twitterapi" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @twitterapi</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+             
+             </div>
+             
+             
+             	
+		</div> 
+		
+    </div>
+	<div class="footer_bottom"> 
+		<div class="footer_inner">
+			
+			<?php /*?><?php echo $this->getChildHtml('cms_footer_links') ?><?php */?>
+        		<address><?php echo $this->getCopyright() ?></address> 
+				<?php echo $this->getChildHtml('footer_links') ?>
+				<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('tm_footer_socialicon')->toHtml() ?> 
+		</div>
+	</div>
+</footer>
+
+ <span class="testimonial_default_width" style="display: none; visibility: hidden;"></span>
+ 
