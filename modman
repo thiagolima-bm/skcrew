@@ -4,3 +4,4 @@ modulos                   			app/code/local/Megnor/
 etc						         	app/etc/modules
 design/frontend						app/design/frontend/
 skin								skin
+js									js
